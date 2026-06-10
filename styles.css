@@ -1,0 +1,183 @@
+/* ===== GLOBAL STYLES ===== */
+    /* Establishes base font, colors, and utility overrides beyond Tailwind */
+    body {
+      font-family: 'Figtree', sans-serif;
+      background-color: #FBF8F2;
+      color: #24302E;
+    }
+    .font-display {
+      font-family: 'Marcellus', serif;
+    }
+    /* Gold accent rules and dividers */
+    .gold-rule {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #C29B40, transparent);
+    }
+    .gold-rule-solid {
+      height: 2px;
+      background-color: #C29B40;
+    }
+    /* Deep teal brand colour as Tailwind doesn't have it natively */
+    .bg-teal-deep {
+      background-color: #0F6E6B;
+    }
+    .text-teal-deep {
+      color: #0F6E6B;
+    }
+    .border-teal-deep {
+      border-color: #0F6E6B;
+    }
+    .text-gold {
+      color: #C29B40;
+    }
+    .border-gold {
+      border-color: #C29B40;
+    }
+    .bg-gold {
+      background-color: #C29B40;
+    }
+    .hover\:bg-gold-dark:hover {
+      background-color: #A8832E;
+    }
+    .bg-shell {
+      background-color: #FBF8F2;
+    }
+    .text-slate-ink {
+      color: #24302E;
+    }
+    /* Location card border treatment */
+    .location-card {
+      border-left: 4px solid #C29B40;
+      transition: box-shadow 0.25s ease;
+    }
+    .location-card:hover {
+      box-shadow: 0 8px 24px rgba(15, 110, 107, 0.12);
+    }
+    /* Treatment icon circle */
+    .treatment-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 9999px;
+      background: rgba(15, 110, 107, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+    }
+    /* Sage card iframe container */
+    .sage-card {
+      border: 1px solid rgba(194, 155, 64, 0.3);
+      border-radius: 12px;
+      overflow: hidden;
+      background: white;
+    }
+    .sage-card-header {
+      background: #0F6E6B;
+      color: #FBF8F2;
+      padding: 0.75rem 1rem;
+      font-family: 'Marcellus', serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+    }
+    /* Star rating inline */
+    .star {
+      color: #C29B40;
+    }
+    /* Button base */
+    .btn-gold {
+      background-color: #C29B40;
+      color: #FBF8F2;
+      font-family: 'Marcellus', serif;
+      letter-spacing: 0.04em;
+      transition: background-color 0.2s ease;
+    }
+    .btn-gold:hover {
+      background-color: #A8832E;
+    }
+    .btn-outline-gold {
+      border: 1px solid #C29B40;
+      color: #0F6E6B;
+      font-family: 'Marcellus', serif;
+      letter-spacing: 0.04em;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    .btn-outline-gold:hover {
+      background-color: #C29B40;
+      color: #FBF8F2;
+    }
+    /* Eyebrow decorative line */
+    .eyebrow-line {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .eyebrow-line::before,
+    .eyebrow-line::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #C29B40, transparent);
+    }
+    .eyebrow-line::before {
+      background: linear-gradient(90deg, transparent, #C29B40);
+    }
+    .eyebrow-line::after {
+      background: linear-gradient(90deg, #C29B40, transparent);
+    }
+    /* Scalloped Spanish tile motif SVG divider container */
+    .tile-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1.5rem 0;
+    }
+    .tile-divider .line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #C29B40, transparent);
+    }
+    /* Mobile first spacing */
+    @media (max-width: 640px) {
+      .hero-stack  {
+        flex-direction: column;
+      }
+    }
+    /* Ensure text never clips on 375px viewport */
+    .safe-pad {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    @media (min-width: 640px) {
+      .safe-pad {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+    }
+    @media (min-width: 768px) {
+      .safe-pad {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+    }
+    @media (min-width: 1024px) {
+      .safe-pad {
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+    }
+    /* Booking band treatment */
+    .booking-band {
+      background-color: #0F6E6B;
+      color: #FBF8F2;
+    }
+    /* Footer address blocks */
+    .footer-address {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    .footer-address strong {
+      font-family: 'Marcellus', serif;
+      font-weight: 400;
+      color: #C29B40;
+    }
